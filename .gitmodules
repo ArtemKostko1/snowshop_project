@@ -1,0 +1,6 @@
+[submodule "snowshop_frontend"]
+	path = snowshop_frontend
+	url = https://github.com/ArtemKostko1/snowshop_frontend.git
+[submodule "snowshop_backend"]
+	path = snowshop_backend
+	url = https://github.com/ArtemKostko1/snowshop_backend.git
