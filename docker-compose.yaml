@@ -8,14 +8,14 @@ services:
   mariadb:
     image: mariadb:latest
     container_name: mariadb
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: snowShop
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      TZ: Europe/Minsk
     ports:
       - "3306:3306"
+    volumes:
+      - /var/lib/mariadb/data:/var/lib/mysql
     networks:
       - snowShop_network
-    # volumes:
-    #   - ./data:/var/lib/mysql
