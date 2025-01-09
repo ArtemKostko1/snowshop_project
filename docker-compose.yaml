@@ -1,12 +1,10 @@
-version: "3"
-
 networks:
   snowShop_network:
     driver: bridge
 
 services:
   mariadb:
-    image: mariadb:latest
+    image: temadoc1/database:latest
     container_name: mariadb
     restart: always
     environment:
