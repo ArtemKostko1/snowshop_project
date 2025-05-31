@@ -8,7 +8,7 @@ services:
         container_name: mariadb
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: pass.123
+            MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: snowShop
             TZ: Europe/Minsk
         ports:
